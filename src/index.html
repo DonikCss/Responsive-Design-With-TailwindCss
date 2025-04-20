@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-indigo-500 text-white">
+    <div class="min-h-screen px-6 py-3 flex flex-col gap-10 md:px-10 lg:px-16 lg:py-7">
+        <header class="flex justify-between items-center">
+            <a href="">
+                <h1 class="text-4xl font-bold">WFA.</h1>
+            </a>
+
+            <ul id="mobile-menu" class="hidden lg:flex lg:items-center lg:gap-10 lg:text-lg lg:font-medium">
+                <li><a href="">Locations</a></li>
+                <li><a href="">Offerings</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+
+            <div class="hidden lg:flex lg:items-center lg:gap-10 lg:text-lg lg:font-medium">
+                <a href="">Login</a>
+                <button class="bg-purple-800 px-2 py-1 font-medium rounded-md">Register</button>
+            </div>
+
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars fa-2xl" id="menu-btn"></i>
+            </div>
+        </header>
+
+        <main class="lg:flex">
+            <div class="flex items-center justify-center lg:flex-1 lg:order-2 lg:justify-end image-transform">
+                <img src="./pexels-maxmishin-10025729.jpg" alt="Mountain with clouds" class="w-[400px] h-[300px]  shadow-2xl outline-2 shadow-black  lg:h-[600px] lg:w-[600px] lg:rounded-full">
+            </div>
+
+            <div class="space-y-6 mt-16 lg:flex-1 lg:order-1 lg:mt-32 text-transform">
+                <div class="text-7xl font-bold leading-tight">
+                    <h1>Let's Switch</h1>
+                    <h1>To Remote</h1>
+                </div>
+                <p>WFA provides top-notch office in prime locations Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nam, excepturi voluptatem voluptatum voluptatibus laboriosam magnam maxime impedit quae omnis accusantium quod error pariatur.
+                    Harum, molestias odio! Veritatis, repellendus saepe?</p>
+
+                    <form action="" class="flex flex-col gap-2 md:flex-row md:gap-0">
+                        <input type="text" placeholder="Enter City" class="max-md:rounded-md md:rounded-l-md bg-white text-black rounded-md px-4 py-3 md:w-80"/>
+                        <button class="bg-purple-800 font-medium whitespace-nowrap px-4 py-3 max-md:rounded md:rounded-r-md rounded-r-md ">Find Your Office</button>
+                    </form>
+                    <div class="flex flex-col gap-4 py-8">
+                        <p class="font-semibold">Used by these companies:</p>
+                        <ul class="flex gap-6">
+                            <li><i class="fa-brands fa-square-twitter fa-2x"></i></li>
+                            <li><i class="fa-brands fa-linkedin fa-2x"></i></li>
+                            <li><i class="fa-brands fa-youtube fa-2x"></i></li>
+                            <li><i class="fa-brands fa-apple fa-2x"></i></li>
+                        </ul>
+                        <span>&copy; 2025 All rights Inc. Reserved.</span>
+                    </div>   
+                    
+            </div>
+        </main>
+
+    </div>
+
+    <script>
+        const scroll = ScrollReveal({
+            reset: true,
+            duration:1500,
+            distance:'60px'
+        })
+        scroll.reveal('.image-transform', {delay:400, origin:'top'})
+        scroll.reveal('.text-transform', {delay:400, origin:'left'})
+
+    </script>
+
+</body>
+</html>
